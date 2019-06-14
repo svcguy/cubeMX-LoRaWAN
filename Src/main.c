@@ -57,8 +57,6 @@ UART_HandleTypeDef huart1;
 DMA_HandleTypeDef hdma_usart1_tx;
 
 /* USER CODE BEGIN PV */
-static LoRaMainCallback_t LoRaMainCallbacks;
-static LoRaParam_t        LoRaParamInit;
 
 /* USER CODE END PV */
 
@@ -67,10 +65,10 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_SPI1_Init(void);
-static void MX_ADC_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_RTC_Init(void);
+static void MX_ADC_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -110,14 +108,13 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_SPI1_Init();
-  MX_ADC_Init();
   MX_I2C1_Init();
   MX_USB_DEVICE_Init();
   MX_USART1_UART_Init();
   MX_RTC_Init();
+  MX_ADC_Init();
   /* USER CODE BEGIN 2 */
-  LORA_Init( &LoRaMainCallbacks, &LoRaParamInit);
-  printf("LoRa Library Initialized\n\r");
+  
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -219,9 +216,12 @@ static void MX_ADC_Init(void)
   {
     Error_Handler();
   }
+  /** Configure the channel speed in Fast mode 
+  */
+  __HAL_ADC_CHANNEL_SPEED_FAST(ADC_CHANNEL_3);
   /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time. 
   */
-  sConfig.Channel = ADC_CHANNEL_4;
+  sConfig.Channel = ADC_CHANNEL_3;
   sConfig.Rank = ADC_REGULAR_RANK_1;
   sConfig.SamplingTime = ADC_SAMPLETIME_4CYCLES;
   if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)

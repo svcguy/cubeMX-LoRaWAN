@@ -60,7 +60,6 @@ void PVD_IRQHandler(void);
 void RCC_IRQHandler(void);
 void EXTI0_IRQHandler(void);
 void DMA1_Channel4_IRQHandler(void);
-void ADC1_IRQHandler(void);
 void USB_LP_IRQHandler(void);
 void EXTI9_5_IRQHandler(void);
 void I2C1_EV_IRQHandler(void);

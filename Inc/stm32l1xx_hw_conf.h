@@ -95,8 +95,8 @@ Maintainer: Miguel Luis and Gregory Cristian
 #else
 
 
-#define RADIO_RESET_PORT                          GPIOA
-#define RADIO_RESET_PIN                           GPIO_PIN_0
+#define RADIO_RESET_PORT                          GPIOB
+#define RADIO_RESET_PIN                           GPIO_PIN_10
 
 #define RADIO_MOSI_PORT                           GPIOA
 #define RADIO_MOSI_PIN                            GPIO_PIN_7
@@ -107,35 +107,35 @@ Maintainer: Miguel Luis and Gregory Cristian
 #define RADIO_SCLK_PORT                           GPIOA
 #define RADIO_SCLK_PIN                            GPIO_PIN_5
 
-#define RADIO_NSS_PORT                            GPIOB
-#define RADIO_NSS_PIN                             GPIO_PIN_6
+#define RADIO_NSS_PORT                            GPIOA
+#define RADIO_NSS_PIN                             GPIO_PIN_15
 
-#define RADIO_DIO_0_PORT                          GPIOA
-#define RADIO_DIO_0_PIN                           GPIO_PIN_10
+#define RADIO_DIO_0_PORT                          GPIOC
+#define RADIO_DIO_0_PIN                           GPIO_PIN_6
 
-#define RADIO_DIO_1_PORT                          GPIOB
-#define RADIO_DIO_1_PIN                           GPIO_PIN_3
+#define RADIO_DIO_1_PORT                          GPIOC
+#define RADIO_DIO_1_PIN                           GPIO_PIN_7
 
-#define RADIO_DIO_2_PORT                          GPIOB
-#define RADIO_DIO_2_PIN                           GPIO_PIN_5
+#define RADIO_DIO_2_PORT                          GPIOC
+#define RADIO_DIO_2_PIN                           GPIO_PIN_8
 
-#define RADIO_DIO_3_PORT                          GPIOB
-#define RADIO_DIO_3_PIN                           GPIO_PIN_4
+#define RADIO_DIO_3_PORT                          GPIOC
+#define RADIO_DIO_3_PIN                           GPIO_PIN_9
 
 #ifdef RADIO_DIO_4 
 #define RADIO_DIO_4_PORT                          GPIOA
-#define RADIO_DIO_4_PIN                           GPIO_PIN_9
+#define RADIO_DIO_4_PIN                           GPIO_PIN_8
 #endif
 
 #ifdef RADIO_DIO_5 
-#define RADIO_DIO_5_PORT                          GPIOC
-#define RADIO_DIO_5_PIN                           GPIO_PIN_7
+#define RADIO_DIO_5_PORT                          GPIOB
+#define RADIO_DIO_5_PIN                           GPIO_PIN_11
 #endif
 
 
 
-#define RADIO_ANT_SWITCH_PORT                     GPIOC
-#define RADIO_ANT_SWITCH_PIN                      GPIO_PIN_1
+#define RADIO_ANT_SWITCH_PORT                     GPIOB
+#define RADIO_ANT_SWITCH_PIN                      GPIO_PIN_15
 
 #endif
 
@@ -169,10 +169,10 @@ Maintainer: Miguel Luis and Gregory Cristian
 #define USARTx_RELEASE_RESET()           __USART2_RELEASE_RESET()
 
 
-#define USARTx_TX_PIN                  GPIO_PIN_2
+#define USARTx_TX_PIN                  GPIO_PIN_9
 #define USARTx_TX_GPIO_PORT            GPIOA  
 #define USARTx_TX_AF                   GPIO_AF7_USART2
-#define USARTx_RX_PIN                  GPIO_PIN_3
+#define USARTx_RX_PIN                  GPIO_PIN_10
 #define USARTx_RX_GPIO_PORT            GPIOA 
 #define USARTx_RX_AF                   GPIO_AF7_USART2
 
@@ -181,11 +181,11 @@ Maintainer: Miguel Luis and Gregory Cristian
 #define USARTx_IRQHandler                USART2_IRQHandler
 
 /* Definition for USARTx's DMA */
-#define USARTx_TX_DMA_CHANNEL             DMA1_Channel7
+#define USARTx_TX_DMA_CHANNEL             DMA1_Channel4
 
 /* Definition for USARTx's NVIC */
-#define USARTx_DMA_TX_IRQn                DMA1_Channel7_IRQn
-#define USARTx_DMA_TX_IRQHandler          DMA1_Channel7_IRQHandler
+#define USARTx_DMA_TX_IRQn                DMA1_Channel4_IRQn
+#define USARTx_DMA_TX_IRQHandler          DMA1_Channel4_IRQHandler
 
 #define USARTx_Priority 0
 #define USARTx_DMA_Priority 0

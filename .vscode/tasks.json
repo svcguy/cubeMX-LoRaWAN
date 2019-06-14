@@ -93,10 +93,7 @@
                 "focus": false,
                 "panel": "shared"
             },
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "problemMatcher": {
                 "owner": "cpp",
                 "fileLocation": [
