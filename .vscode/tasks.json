@@ -56,7 +56,7 @@
         {
             "label": "Flash",
             "type": "shell",
-            "command": "arm-none-eabi-gdb -q -batch -nx -ex 'target extended-remote COM8' -ex 'set ELFNAME ${workspaceFolderBasename}' -x bmp-flash.scr",
+            "command": "arm-none-eabi-gdb -q -batch -nx -ex 'target extended-remote COM7' -x bmp-flash.scr",
             "presentation": {
                 "echo": true,
                 "reveal": "always",

@@ -22,10 +22,7 @@
                     "text": "cd ${workspaceRoot}/build"
                 },
                 {
-                    "text": "target extended-remote COM8"
-                },
-                {
-                    "text": "monitor tpwr enable"
+                    "text": "target extended-remote COM7"
                 },
                 {
                     "text": "monitor swdp_scan"

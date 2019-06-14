@@ -1,4 +1,3 @@
-monitor tpwr enable
 monitor swdp_scan
 attach 1
 file ./build/lorawanFeather.elf
