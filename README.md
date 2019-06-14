@@ -1,3 +1,7 @@
+STCubeMX LoRaWAN stack template
+
+Built using v1.2.1 of ST's LoRaWAN Stack
+
 Visual Studio Code Template for STM32 with Black Magic Probe
 
 A basic template app that contains the following:

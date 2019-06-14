@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "lora.h": "c",
+        "commissioning.h": "c",
+        "loramac.h": "c",
+        "utilities.h": "c",
+        "trace.h": "c",
+        "utilities_conf.h": "c",
+        "hw_conf.h": "c",
+        "main.h": "c",
+        "stm32l1xx_hal.h": "c"
+    }
+}

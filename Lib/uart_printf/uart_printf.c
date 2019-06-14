@@ -2,6 +2,8 @@
 #include <stdarg.h>
 #include "uart_printf.h"
 
+extern UART_HandleTypeDef huart1;
+
 /**
  * @brief Printf redirect to UART
  * @param None

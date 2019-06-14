@@ -42,7 +42,6 @@
             "type": "shell",
             "command": "make",
             "args": [
-                "-j8",
                 "clean"
             ],
             "presentation": {

@@ -3,7 +3,7 @@
 #define __uart_printf_H
 
 #ifdef USE_HAL_DRIVER
-#include "usart.h"
+#include "stm32l1xx_hal_usart.h"
 #else
 #error "USART HAL Module Not Enabled"
 #endif /* HAL_UART_MODULE_ENABLED */

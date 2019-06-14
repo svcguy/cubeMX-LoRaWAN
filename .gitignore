@@ -4,6 +4,7 @@
 
 # VSCode stuff
 *.DB*
+ipch
 
 
 # files being edited
